@@ -22,6 +22,7 @@ public class LocalDataResource extends DataResource<String, Integer> {
             for (String line : list) {
                 String[] data = line.split("=");
                 mapping.put(data[0], Integer.parseInt(data[1]));
+                map.put(data[0],Integer.parseInt(data[1]));
             }
         } catch (IOException e) {
             Logger.error(e);
