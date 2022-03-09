@@ -1,0 +1,42 @@
+{
+  "server": {
+    "port": 0
+  },
+  "database": {
+    "host": "host-ip",
+    "user": "database-username",
+    "database": "database-name",
+    "port": 0,
+    "password": "database-password"
+  },
+  "BR": [
+    "user:pass"
+  ],
+  "EUNE": [
+    "user:pass"
+  ],
+  "EUW": [
+    "user:pass"
+  ],
+  "JP": [
+    "user:pass"
+  ],
+  "LAN": [
+    "user:pass"
+  ],
+  "LAS": [
+    "user:pass"
+  ],
+  "NA": [
+    "user:pass"
+  ],
+  "OCE": [
+    "user:pass"
+  ],
+  "RU": [
+    "user:pass"
+  ],
+  "TR": [
+    "user:pass"
+  ]
+}

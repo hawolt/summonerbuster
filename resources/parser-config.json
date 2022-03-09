@@ -1,0 +1,29 @@
+{
+  "database": {
+    "host": "host-ip",
+    "user": "database-username",
+    "database": "database-name",
+    "port": 0,
+    "password": "database-password"
+  },
+  "EUW": [
+    "user:pass",
+    "user:pass"
+  ],
+  "NA": [
+    "user:pass",
+    "user:pass"
+  ],
+  "TR": [
+    "user:pass",
+    "user:pass"
+  ],
+  "EUNE": [
+    "user:pass",
+    "user:pass"
+  ],
+  "RU": [
+    "user:pass",
+    "user:pass"
+  ]
+}
