@@ -1,7 +1,5 @@
 # Summonerbuster
 
----
-
 Hey you, thank you for being interested in how Summonerbuster works, I put a lot of hard work and love into this project because I thought it was a unique idea of something that has not been done before.
 
 **Please note that this project is currently just the Backend as the Frontend is being redesigned**
@@ -10,7 +8,7 @@ I have tried to make it as simple as possible to host this project yourself, the
 
 ---
 
-###Software requirements
+### Software requirements
 
 * git
 * maven
@@ -19,7 +17,7 @@ I have tried to make it as simple as possible to host this project yourself, the
 
 ---
 
-###Working setup
+### Working setup
 
 *Hint: regardless of your setup, this should run on any system that can run the required software*
 
@@ -35,7 +33,7 @@ postgres :`psql (PostgreSQL) 13.5 (Debian 13.5-0+deb11u1)`
 
 ---
 
-###Building the project
+### Building the project
 
 *this section assumes you are running a bash terminal*
 
@@ -49,13 +47,13 @@ this script will take care of everything for you, the output of this script will
 
 ---
 
-###Setting up your database
+### Setting up your database
 
 the `resources` folder has a file called `database` which has all the three tables required for this project plus a few indexes for performance
 
 ---
 
-###Running the project
+### Running the project
 
 when run successfully you will have `run-server.sh` and `run-parser.sh` which can be used to run the corresponding program.
 
