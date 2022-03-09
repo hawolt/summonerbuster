@@ -1,0 +1,7 @@
+.idea/*
+boot/*
+*/target/*
+*/src/test/*
+run*.sh
+build/*
+src/*
