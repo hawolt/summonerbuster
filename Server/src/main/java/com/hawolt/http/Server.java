@@ -1,10 +1,7 @@
 package com.hawolt.http;
 
 import com.hawolt.external.Dragon;
-import com.hawolt.http.handler.CacheHandler;
-import com.hawolt.http.handler.HistoryHandler;
-import com.hawolt.http.handler.ProfileHandler;
-import com.hawolt.http.handler.QueryHandler;
+import com.hawolt.http.handler.*;
 import com.hawolt.sql.QueryManager;
 import io.javalin.Javalin;
 import org.json.JSONObject;
@@ -36,7 +33,7 @@ public class Server implements Runnable {
 
                 get("client/profile/{puuid}", new ProfileHandler());
                 get("client/history/{puuid}", new HistoryHandler());
-                get("client/puuid/{name}", new HistoryHandler());
+                get("client/puuid/{platform}/{name}", new NameToPuuidHandler());
 
                 get("data/total", context -> context.result(jsonify(QueryManager.getQueries())));
                 get("data/dragon", context -> context.result(Dragon.mapping.toString()));

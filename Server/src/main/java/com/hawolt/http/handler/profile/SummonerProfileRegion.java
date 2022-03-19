@@ -30,4 +30,13 @@ public enum SummonerProfileRegion {
 
     public static final SummonerProfileRegion[] REGIONS = SummonerProfileRegion.values();
 
+    public static SummonerProfileRegion findByName(String name) {
+        for (SummonerProfileRegion region : REGIONS) {
+            if (region.name().equalsIgnoreCase(name)) {
+                return region;
+            }
+        }
+        return null;
+    }
+
 }
