@@ -39,8 +39,9 @@ public class InfoManager {
                             break;
                         case CHAMP_ID:
                             String champion = argument.getValue();
-                            id = Dragon.retrieve(ResourceType.CHAMPION, champion.toLowerCase());
-                            if (id == -1) throw new InvalidInputException("champion", champion);
+                            if (!champion.matches("[0-9]+")) throw new InvalidInputException("champion", champion);
+                            //id = Dragon.retrieve(ResourceType.CHAMPION, champion.toLowerCase());
+                            id = Integer.parseInt(champion);
                             statement.setInt(argument.getIndex(), id);
                             break;
                         case SPELL1_ID:
